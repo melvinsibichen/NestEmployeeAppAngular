@@ -1,0 +1,24 @@
+<app-admin-navbar></app-admin-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-2 m-2">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center mb-5">
+                    <h4>Add Task</h4>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Task</label>
+                    <textarea class="form-control" name="task" [(ngModel)]="task" id="" cols="30" rows="3"></textarea>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Task Assigned To</label>
+                    <input class="form-control" name="employeeId" [(ngModel)]="employeeId" type="text">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValues()" class="btn btn-danger">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

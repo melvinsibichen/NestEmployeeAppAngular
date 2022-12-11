@@ -1,0 +1,27 @@
+<app-home-navbar></app-home-navbar>
+<div class="container g-0 mx-auto my-3 rounded shadow-lg h-100 py-5" style="height: 100vh;">
+    <div class="row">
+        
+        <div class="col col-12 col-sm-5 col-md-5 col-l-5 col-xl-5 col-xxl-5 d-flex justify-content-center">
+            <img class="img-fluid" src="https://img.freepik.com/free-vector/access-control-system-abstract-concept-vector-illustration-security-system-authorize-entry-login-credentials-electronic-access-password-passphrase-pin-verification-abstract-metaphor_335657-5746.jpg?w=740&t=st=1670744745~exp=1670745345~hmac=9f5a3f6bcf63293566c6d95adbeae4ad147e1df62c57967f0cd254e55d5f738a" alt="">
+        </div>
+        <div class="col col-12 col-sm-7 col-md-7 col-l-7 col-xl-7 col-xxl-7 my-auto">
+            <div class="row g-2 m-2">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <h4>Employee Login</h4>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10 mx-auto">
+                    <label for="" class="form-label">Username</label>
+                    <input name="username" [(ngModel)]="username" type="text" class="form-control shadow">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10 mx-auto">
+                    <label for="" class="form-label">Password</label>
+                    <input name="password" [(ngModel)]="password" type="password" class="form-control shadow">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center mt-4">
+                    <button (click)="readValues()" class="btn btn-dark shadow">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

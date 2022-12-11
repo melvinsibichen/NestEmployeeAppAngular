@@ -1,0 +1,31 @@
+<app-employee-navbar></app-employee-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-2 m-2">
+                <div class="col col-12 col-sm-12 col-md-612 col-lg-12 col-xl-12 col-xxl-12 mb-2 text-center">
+                    <h4>My Tasks</h4>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-612 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Task</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of fetchedTasks;let j=index">
+                                <td>{{j+1}}</td>
+                                <td>{{i.task}}</td>
+                                <td>{{i.status}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
